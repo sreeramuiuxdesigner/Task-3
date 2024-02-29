@@ -23,3 +23,14 @@ if(isSame){
 } else {
     console.log("Objects are different")
 }
+
+
+let sortedJSON1 = JSON.stringify(obj1, Object.keys(obj1).sort());
+let sortedJSON2 = JSON.stringify(obj2, Object.keys(obj2).sort());
+
+
+if (sortedJSON1 === sortedJSON2) {
+  console.log("The JSON objects are equal.");
+} else {
+  console.log("The JSON objects are not equal.");
+}
